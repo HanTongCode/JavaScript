@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js数据类型</title>
+  </head>
+  <body>
+    <script>
+      /*
+       * js数据类型包括基本数据类型和引用数据类型
+       *
+       * 基本数据类型通过栈存储，包括Number，String，Boolean，Null，Undefiend，Symbol，BigInt
+       *
+       * 引用数据类型通过堆存储，包括Object
+       */
+
+      //Number类型
+      var age = 18;
+      console.log(age, typeof age);
+      // 18 'number'
+
+      // String类型
+      var name = "张三";
+      console.log(name, typeof name);
+      //张三 string
+
+      // Boolean类型
+      var flag = true;
+      console.log(flag, typeof flag);
+      //true 'boolean'
+
+      // Null类型
+      var n = null;
+      console.log(n, typeof n);
+      //null 'object'
+
+      // Undefiend类型
+      var u;
+      console.log(u, typeof u);
+      //undefined 'undefined'
+
+      // Symbol类型
+      var s = Symbol("say");
+      console.log(s, typeof s);
+      //Symbol(say) 'symbol'
+
+      // BigInt类型
+      var b = BigInt("10");
+      console.log(b, typeof b);
+      //10n 'bigint'
+    </script>
+  </body>
+</html>
