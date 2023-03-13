@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 将其他类型转换为String
+      /**
+       * 1.调用toString()方法,不会改变原数据。null和undefiend没有toString方法
+       * 2.调用String()函数,将需要转换的数据写入String函数的参数中
+       */
+      let a = 123;
+      console.log(typeof a);
+      console.log(typeof a.toString());
+      console.log(a);
+      console.log(typeof String(a));
+
+      console.log("*********");
+      // 将其他类型转换为Number
+      /**
+       * 1.使用Number()函数
+       *    -字符串
+       *      1.纯数字->数字
+       *      2.空串->0
+       *      3.含有非数字->NaN
+       *
+       *    -布尔
+       *      1.true->1
+       *      2.false->0
+       *
+       *    -null
+       *      null->0
+       *
+       *    -undefiend
+       *      undefined->NaN
+       * 2.专门针对字符串,读取到第一个不是数字
+       *  -使用parseInt()---整数
+       *  -使用parseFloat()---小数
+       */
+
+      // let b = "123";
+
+      // let b = true;
+
+      // let b = null;
+
+      let b = undefined;
+
+      console.log(typeof b);
+      console.log(Number(b));
+      console.log(typeof Number(b));
+
+      console.log("*********");
+      let c = "100px";
+      let d = "123.456px";
+      console.log(typeof c, typeof d);
+      console.log(parseInt(c), parseFloat(d));
+      console.log(typeof parseInt(c), typeof parseFloat(d));
+    </script>
+  </head>
+  <body></body>
+</html>

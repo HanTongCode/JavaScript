@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      /**
+       *
+       * 对于非布尔值的运行，先转换为布尔类型
+       *
+       * !非
+       *
+       * &&与
+       *    - 如果第一个值为true，则必然返回第二个值
+       *    - 如果第一个值为false，则直接返回第一个值
+       *
+       * ||或
+       *    - 如果第一个值为true，则必然返回第一个值
+       *    - 如果第一个值为false，则直接返回第二个值
+       */
+      let a = true;
+      console.log(!a);
+
+      let b = false;
+      console.log(a && b, a || b);
+
+      let c = "11";
+      let d = "22";
+      console.log(c && d);
+      console.log(c || d);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -20,10 +20,21 @@
       var age = 18;
       console.log(age, typeof age);
       // 18 'number'
+      console.log(Number.MAX_VALUE);
+      console.log(Number.MAX_VALUE * Number.MAX_VALUE);
+      // 1.7976931348623157e+308
+      // Infinity
+      console.log("a" * "b");
+      // NaN
+      // Infinity,NaN都是number类型
 
       // String类型
       var name = "张三";
+      // \n换行
+      // \t制表符
+      var str = "我是\n'你的神'";
       console.log(name, typeof name);
+      console.log(str);
       //张三 string
 
       // Boolean类型
@@ -32,11 +43,13 @@
       //true 'boolean'
 
       // Null类型
+      // 专门表示一个为空的对象
       var n = null;
       console.log(n, typeof n);
       //null 'object'
 
       // Undefiend类型
+      // 未定义，当声明一个变量却没有对它赋值
       var u;
       console.log(u, typeof u);
       //undefined 'undefined'

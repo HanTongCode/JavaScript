@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--将js代码卸载script标签中 -->
+    <!-- <script>
+      alert("我是script中的alert");
+    </script> -->
+
+    <!-- 将js代码写在外部文件，src指向外部文件中的路径 -->
+    <!-- script标签引入外部文件，script标签里面不能再编写js代码 -->
+    <script src="./alert.js"></script>
+  </head>
+  <body>
+    <!-- js代码写到onclick属性里面，点击按钮执行js代码 -->
+
+    <button onclick="alert('js编写位置')">点我弹出警告</button>
+    <!-- js代码写到a标签herf属性里面，点击a标签执行js代码 -->
+    <a href="javascript:alert('a标签中js编写位置')">a标签弹出警告框</a>
+  </body>
+</html>

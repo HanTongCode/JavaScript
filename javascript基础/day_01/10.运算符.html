@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      /**
+       * 算术运算符
+       *  当对非Number类型的值进行运算时，会将这些值转换为Number
+       *
+       *  +
+       *    +对两个值进行加法运算，并将结果返回
+       *     如果对两个字符串进行加法运算，则会做拼串
+       *
+       * 自动转换为Number
+       *  -
+       *    -对两个值进行减法运算
+       *
+       *  *
+       *    *对两个值进行*运算
+       *
+       *  /
+       *    /对两个值进行/运算
+       *
+       */
+
+      let result = 1 + NaN;
+      let result2 = 1 + null;
+      let result3 = "1" + "1";
+      let result4 = 1 + 1 + "2";
+      let result5 = "2" + 1 + 1;
+      console.log(result, result2, result3, result4, result5);
+    </script>
+  </head>
+  <body></body>
+</html>
